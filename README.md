@@ -69,13 +69,3 @@ This project demonstrates an end-to-end Azure data pipeline using various Azure 
 - ✅ Interactive Power BI reports
 
 ---
-
-## 📝 License
-
-This project is licensed under the MIT License.
-
----
-
-## 🙌 Acknowledgements
-
-Inspired by the [Udemy Course](https://www.udemy.com/course/end-to-end-azure-data-engineering-real-time-project/).
