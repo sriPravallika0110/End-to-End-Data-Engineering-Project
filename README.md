@@ -14,11 +14,7 @@ This project demonstrates an end-to-end Azure data pipeline using various Azure 
 - **Power BI**
 - **Azure Key Vault**
 
----
 
-## 📊 Architecture Diagram
-
-![Architecture](assets/architecture.png)
 
 ---
 
@@ -32,16 +28,7 @@ This project demonstrates an end-to-end Azure data pipeline using various Azure 
 
 ---
 
-## 📁 Folder Structure
-
-| Folder       | Description                             |
-|--------------|-----------------------------------------|
-| `data/`      | Sample datasets                         |
-| `src/`       | Scripts for transformation in Databricks|
-| `pipeline/`  | ADF JSON pipeline definitions           |
-| `assets/`    | Diagrams and visuals                    |
-| `sql/`       | SQL queries for validation or reports   |
-| `notebooks/` | Databricks notebooks                    |
+l        
 
 ---
 
@@ -49,7 +36,7 @@ This project demonstrates an end-to-end Azure data pipeline using various Azure 
 
 1. Clone this repo  
    ```bash
-   git clone https://github.com/YOUR_USERNAME/azure-end-to-end-data-pipeline.git
+   git clone https://github.com/sriPravallika0110/azure-end-to-end-data-pipeline.git
    ```
 
 2. Upload data to Azure Blob Storage
