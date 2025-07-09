@@ -58,6 +58,8 @@ Resource Group: Create a new resource group or select an existing one.
 Name: Enter a unique name (e.g., ADF-Project-YourName).
 Region: Select your preferred region.
 Click "Review + create" and then "Create".
+
+
 2. Set Up Azure Data Lake Storage Gen2
 Create Storage Account:
 
@@ -80,6 +82,8 @@ Create three containers named:
 bronze
 silver
 gold
+
+
 3. Configure Linked Services in Azure Data Factory
 Access ADF Studio:
 
@@ -101,6 +105,8 @@ Connector: Azure Data Lake Storage Gen2
 Name: ADLS_LinkedService
 Storage Account Name: Select your storage account.
 Test Connection and Create.
+
+
 4. Create Datasets
 Source Dataset (HTTP):
 
@@ -124,6 +130,8 @@ File Format: DelimitedText (CSV)
 Folder Path: Parameterized for Bronze, Silver, and Gold layers.
 Parameters: Add parameters for folderPath and fileName.
 Dynamic Content: Use the parameters in the dataset.
+
+
 5. Build Pipelines
 Static Pipeline (Initial Setup):
 
@@ -146,6 +154,8 @@ Inside ForEach:
 Copy Activity: Use parameters to dynamically set relativeURL and sink paths.
 Debug and Publish: Test the dynamic pipeline with multiple files.
 6. Transform Data with Azure Databricks
+
+
 Create Databricks Workspace:
 
 In the Azure Portal, create an Azure Databricks workspace.
@@ -155,6 +165,8 @@ Develop Transformation Scripts:
 Import data from the silver layer.
 Perform data cleaning, enrichment, and transformations using Spark.
 Write transformed data to the gold layer.
+
+
 7. Set Up Azure Synapse Analytics
 Create Synapse Workspace:
 
@@ -164,6 +176,8 @@ Ingest Data:
 
 Load transformed data from the gold layer into Synapse.
 Create necessary tables and views for analysis.
+
+
 8. Integrate with Power BI
 Connect Synapse to Power BI:
 
